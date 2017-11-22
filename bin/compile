@@ -15,7 +15,7 @@ ENV_DIR=$3
 
 export_env_dir $ENV_DIR
 
-JVM_COMMON_BUILDPACK=${JVM_COMMON_BUILDPACK:-http://lang.goodrain.com/jvm/jvm-common.tgz}
+JVM_COMMON_BUILDPACK=${JVM_COMMON_BUILDPACK:-http://lang.goodrain.me/jvm/jvm-common.tgz}
 
 WEBSERVER=`cat $BUILD_DIR/webserver`
 WEBSERVER=${WEBSERVER:=webapp-runner-7.0.57.2.jar}
@@ -23,7 +23,7 @@ WEBSERVER=${WEBSERVER:=webapp-runner-7.0.57.2.jar}
 WEBTYPE=`echo $WEBSERVER|awk -F '-' '{print $1}'`
 WEBTYPE=${WEBTYPE:=webapp}
 
-DOWNLOAD_URL="http://lang.goodrain.com/java/$WEBTYPE-runner/$WEBSERVER"
+DOWNLOAD_URL="http://lang.goodrain.me/java/$WEBTYPE-runner/$WEBSERVER"
 
 mkdir -p /tmp/jvm-common
 curl --silent --location $JVM_COMMON_BUILDPACK | tar xzm -C /tmp/jvm-common
