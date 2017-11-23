@@ -1,6 +1,6 @@
-# JAVA WAR APP buildpack
+# Goodrain buildpack for java war
 
-云帮为了让您更方便的部署项目，特推出识可别 **WAR包** 的构建模式- **JAVA WAR APP buildpack** 。
+云帮为了让您更方便的部署项目，特推出识可别 **Java WAR包** 的构建模式。
 
 ## 工作原理
 
@@ -29,4 +29,4 @@ web: java -cp config/:lib/*.jar:bin/.class Example
 
 ## 授权
 
-根据 MIT 授权证获得许可。 请参阅LICENSE文件
+根据 MIT 授权获得许可。 请参阅LICENSE文件
